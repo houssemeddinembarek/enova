@@ -1,5 +1,33 @@
-#canvas{
-  
-  background-image: url("assets/test.svg");
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.row {
+  flex-direction: row;
+  z-index: 99999;
+}
+
+.svg-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 1055px;
+  width: 1055px;
+}
+
+
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+svg {
+  transition: transform 0.1s linear 0.1s;
 }
