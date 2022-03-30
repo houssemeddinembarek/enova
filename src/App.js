@@ -30,8 +30,7 @@ class  App extends Component {
     
         <Router>
            <Routes>
-             <Route exact path="/" />
-             <Route exact path="/canvas" element={<Canvas/>}/>
+             <Route exact path="/" element={<Canvas/>}/>
            </Routes>
          </Router>
         
